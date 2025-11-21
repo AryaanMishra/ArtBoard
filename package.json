@@ -1,0 +1,14 @@
+{
+  "name": "artboard",
+  "version": "1.0.0",
+  "description": "Real-time collaborative pixel art web app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  }
+}

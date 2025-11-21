@@ -1,0 +1,10 @@
+.canvas {
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: crosshair;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

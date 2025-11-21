@@ -1,0 +1,60 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #2d2d2d;
+  border-bottom: 2px solid #444;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaa;
+  margin: 0;
+}
+
+.toolGroup {
+  display: flex;
+  gap: 4px;
+  background-color: #1e1e1e;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.toolButton {
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: #444;
+  color: #fff;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolButton:hover {
+  background-color: #555;
+}
+
+.toolButton.active {
+  background-color: #0e7490;
+  box-shadow: 0 0 8px rgba(14, 116, 144, 0.5);
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #444;
+}
