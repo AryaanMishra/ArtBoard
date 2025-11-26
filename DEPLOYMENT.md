@@ -11,30 +11,17 @@ This guide covers free hosting options for both frontend and backend.
 
 ### Frontend: Deploy to GitHub Pages
 
-1. **Push to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/artboard.git
-   git push -u origin main
-   ```
+**See complete guide: `GITHUB_PAGES_SETUP.md`**
 
-2. **Update vite.config.ts** (if not on root domain):
-   ```typescript
-   export default defineConfig({
-     base: '/artboard/',  // if deployed to username.github.io/artboard
-     // ... rest of config
-   })
-   ```
+Quick steps:
+1. Go to repo **Settings** → **Pages**
+2. Set Source: `GitHub Actions`
+3. Set Actions permissions: `Read and write`
+4. Push to main branch
+5. Workflow automatically builds and deploys
+6. Site available at: `https://YourUsername.github.io/ArtBoard`
 
-3. **Enable Pages:**
-   - Go to GitHub repo → Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: main, folder: `/frontend/dist`
-
-4. **Add Deploy Workflow** (`.github/workflows/deploy-frontend.yml`):
-   - Already included in `.github/workflows/`
+The workflow is already configured in `.github/workflows/deploy-frontend.yml`
 
 ### Backend: Deploy to Railway
 
